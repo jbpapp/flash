@@ -12,7 +12,7 @@ class Flash {
      * @param  string $level   [description]
      * @return
      */
-    public function create($message, $title = null, $level = 'info')
+    public function create($message, $title = '', $level = 'info')
     {
         return session()->flash(
             'flash_message',
@@ -40,7 +40,7 @@ class Flash {
      * @param  string $title
      * @return void
      */
-    public function success($message, $title)
+    public function success($message, $title = '')
     {
         return $this->create($message, $title, 'success');
     }
@@ -52,7 +52,7 @@ class Flash {
      * @param  string $title
      * @return void
      */
-    public function error($message, $title)
+    public function error($message, $title = '')
     {
         return $this->create($message, $title, 'error');
     }
@@ -64,7 +64,7 @@ class Flash {
      * @param  string $title
      * @return void
      */
-    public function info($message, $title)
+    public function info($message, $title = '')
     {
         return $this->create($message, $title, 'info');
     }    
