@@ -14,6 +14,9 @@ You can install this package by loading it from it's Github repository. Just add
             "url": "https://github.com/jbpapp/flash"
         }
     ],
+    "require": {
+		"jbpapp/flash": "^1.0.0"
+	}
     ...
 }
 ```  
